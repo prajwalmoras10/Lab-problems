@@ -1,0 +1,21 @@
+# checks if two appointments overlap
+s = ""
+e = ""
+start1 = int(input("Enter the start hour of the first appointment: "))
+start2 = int(input("Enter the start hour of the second appointment: "))
+end1 = int(input("Enter the end time of the first appointment: "))
+end2 = int(input("Enter the end time of the second appointment: "))
+
+if start1 > start2:
+    s = start1
+else:
+    s = start2
+if end1 < end2:
+    e = end1
+else:
+    e = end2
+
+if s < e:
+    print("The appointments overlap.")
+else:
+    print("The appointments do not overlap.")
