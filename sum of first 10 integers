@@ -1,0 +1,7 @@
+# sum of first 10 positive integers
+i = 10
+a = 0
+while i >= 0:
+    a = a + i
+    i = i - 1
+print("The sum of the first 10 positive integers is = ", a)
