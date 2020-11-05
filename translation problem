@@ -1,0 +1,24 @@
+# takes input input in english and returns the output in Kannada
+
+a = input("enter Good Morning :")
+b = input("It is a pleasure to meet you :")
+c = input("Please call me tomorrow :")
+d = input("Have a nice day :")
+g_1 = "Good Morning"
+g_2 = "It is a pleasure to meet you"
+g_3 = "Please call me tomorrow"
+g_4 = "Have a nice day"
+res_1 = "ಶುಭೋದಯ"
+res_2 = "ನಿಮ್ಮನ್ನು ಭೇಟಿಯಾಗಿ ನನಗೆ ಸಂತೋಷವಾಯಿತು"
+res_3 = "ದಯವಿಟ್ಟು ನಾಳೆ ನನಗೆ ಕರೆ ಮಾಡಿ"
+res_4 = "ಶುಭ ದಿನ"
+
+# continue with conditional statements and elif statement
+if a == str(g_1):
+    print(str(g_1), "|", str(res_1))
+if b == str(g_2):
+    print(str(g_2), "|", str(res_2))
+if c == str(g_3):
+    print(str(g_3), "|", str(res_3))
+if d == str(g_4):
+    print(str(g_4), "|", str(res_4))
