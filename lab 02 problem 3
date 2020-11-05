@@ -1,0 +1,4 @@
+# replacing the middle part of a long word
+word = "Mississippi"
+word = word.replace("siss", "....")
+print(word)
