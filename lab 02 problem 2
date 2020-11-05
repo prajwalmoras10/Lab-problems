@@ -1,0 +1,4 @@
+# takes multiple digit numbers and prints a space between them
+a = (input("Enter a 5 digit number :"))
+
+print(" ".join(a))
