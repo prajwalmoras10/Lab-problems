@@ -1,9 +1,0 @@
-# bookstore problem takes input and prints with tax
-total_books = int(input("Enter the number of books :"))
-total_price = int(input("Enter the price of the books :"))
-
-tax = (7.5/100) * total_price
-shipping_charge = 2 * total_books
-total_price = total_price + (tax + shipping_charge)
-
-print("The total price of the order is %f dollars" % total_price)
