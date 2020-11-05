@@ -1,0 +1,9 @@
+# prints the bank balance after 3 years
+initial_balance = 1000
+years = 0
+
+while years <= 3:
+    interest = (initial_balance + ((initial_balance) * (5/100)))
+    total = initial_balance + (interest) # 50 because it is the 5 percent of 1000 (interest)
+    years = years + 1
+    print(total)

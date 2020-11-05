@@ -1,0 +1,6 @@
+# prints name inside a pattern
+a = input("Enter a name: ")
+
+print("+------+")
+print("|", str(a), "|" )
+print("+------+")
