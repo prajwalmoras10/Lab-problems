@@ -1,0 +1,25 @@
+# taxes calculator based on marital status and income
+income = float(input("How much do you earn per month? :"))
+marital_status = input("enter Married or Unmarried :")
+
+if marital_status == "Unmarried":
+    if (income > 0) and (income < 8000):
+        taxes = (income * 10) / 100
+        print("The taxes you have to pay are $", str(taxes))
+    elif (income >= 8000) and (income < 32000):
+        taxes = (income/800) + ((income * 15)/100)
+        print("The taxes you have to pay are $", str(taxes))
+    else:
+        taxes = (income/4400) + ((income * 25)/100)
+        print("The taxes you have to pay are $", str(taxes))
+
+if marital_status == "Married":
+    if (income > 0) and (income < 16000):
+        taxes = (income * 10) / 100
+        print("The taxes you have to pay are $", str(taxes))
+    elif (income >= 16000) and (income < 64000):
+        taxes = (income/1600) + ((income * 15)/100)
+        print("The taxes you have to pay are $", str(taxes))
+    else:
+        taxes = (income/8800) + ((income * 25)/100)
+        print("The taxes you have to pay are $", str(taxes))
