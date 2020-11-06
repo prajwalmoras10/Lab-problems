@@ -1,0 +1,37 @@
+# grade translates into number or vice versa
+grade = input("Enter the grade: ")
+
+if grade == "A+":
+    number_value = 4.0
+    print(str(grade), "=", str(number_value))
+
+elif grade == "A-":
+    number_value = 3.7
+    print(str(grade), "=", str(number_value))
+
+elif grade == "B+":
+    number_value = 3.0
+    print(str(grade), "=", str(number_value))
+
+elif grade == "B-":
+    number_value = 2.7
+    print(str(grade), "=", str(number_value))
+
+elif grade == "C+":
+    number_value = 2
+    print(str(grade), "=", str(number_value))
+
+elif grade == "C-":
+    number_value = 1.7
+    print(str(grade), "=", str(number_value))
+
+elif grade == "D+":
+    number_value = 1.0
+    print(str(grade), "=", str(number_value))
+
+elif grade == "D-":
+    number_value = 0.7
+    print(str(grade), "=", str(number_value))
+
+elif grade == "F":
+    print("You have failed")

@@ -1,0 +1,27 @@
+# asks user for month and prints season
+month = int(input("Enter month number :"))
+
+if (month > 0) and (month < 4):
+    season = "Winter"
+    print(season)
+elif (month > 3) and (month < 7):
+    season = "Spring"
+    print(season)
+elif (month > 6) and (month < 10):
+    season = "Summer"
+    print(season)
+elif (month > 9) and (month <= 12):
+    season = "Fall"
+    print(season)
+
+if (month % 3) == 0:
+    if season == "Winter" :
+        season == "Spring"
+    elif season == "Spring":
+        season == "Summer"
+    elif season == "Summer":
+        season == "Fall"
+    else:
+        season == "Winter"
+
+    print(season)
