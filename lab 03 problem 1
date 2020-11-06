@@ -11,5 +11,5 @@ if a < b:
     if b < c:
         print("It is in ascending order")
 
-else:
-    print("It is neither in ascending nor in descending order")
+    else:
+        print("it is neither")
