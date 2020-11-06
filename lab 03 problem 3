@@ -1,0 +1,17 @@
+a = input("")
+
+if a.isdigit():
+    print("numbers")
+elif a.isalpha():
+    if a.islower():
+        print("lowercase alphabets")
+    elif a.isupper():
+        print("uppercase alphabets")
+    else:
+        print("alphabets")
+elif a.isalnum():
+    print("alphabets with numbers")
+elif a.endswith("."):
+    print("Ends with period")
+
+
