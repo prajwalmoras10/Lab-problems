@@ -1,0 +1,15 @@
+# checks the amount spent by the customer and outputs the percentage of discount in gift voucher
+bill_amount = float(input("Enter the amount spent by the customer: "))
+
+if bill_amount < 10:
+    print("No gift voucher because bill amount is too less")
+elif (bill_amount >= 10) and (bill_amount < 60):
+    print("The gift voucher is of 8%")
+elif (bill_amount >= 60) and (bill_amount < 150):
+    print("The gift voucher is of 10%")
+elif (bill_amount >= 150) and (bill_amount < 210):
+    print("The gift voucher is of 12%")
+elif (bill_amount >= 210):
+    print("The gift voucher is of 14%")
+else:
+    print("No gift voucher because bill amount is too less")
