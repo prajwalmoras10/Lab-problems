@@ -1,0 +1,75 @@
+# conversion from one physical unit to other physical unit
+unit = str(input("Enter the unit which you want to convert: "))
+convert_unit = str(input("Enter the unit to which you want to convert to: "))
+unit_value = float(input("Enter value of unit to be converted: "))
+
+if (unit == "ml") and (convert_unit == "fl.oz"):
+    fl_oz = (unit_value / 28.413075)
+    print("The value of", str(unit), "in", str(convert_unit), "is %f" % fl_oz)
+
+elif (unit == "l") and (convert_unit == "fl.oz"):
+    fl_oz = (unit_value * 35.1950642)
+    print("The value of", str(unit), "in", str(convert_unit), "is %f" % fl_oz)
+
+elif (unit == "ml") and (convert_unit == "oz"):
+    oz = (unit_value / 28.413075)
+    print("The value of", str(unit), "in", str(convert_unit), "is %f" % oz)
+
+elif (unit == "l") and (convert_unit == "oz"):
+    oz = (unit_value * 35.1950642)
+    print("The value of", str(unit), "in", str(convert_unit), "is %f" % oz)
+
+elif (unit == "ml") and (convert_unit == "gallon"):
+    gallon = (unit_value / 4546.092)
+    print("The value of", str(unit), "in", str(convert_unit), "is %f" % gallon)
+
+elif (unit == "l") and (convert_unit == "gallon"):
+    gallon = (unit_value / 4.546092)
+    print("The value of", str(unit), "in", str(convert_unit), "is %f" % gallon)
+
+elif (unit == "gram") and (convert_unit == "pounds"):
+    pounds = (unit_value / 453.59237)
+    print("The value of", str(unit), "in", str(convert_unit), "is %f" % pounds)
+
+elif (unit == "kg") and (convert_unit == "pounds"):
+    pounds = (unit_value * 2.20462262)
+    print("The value of", str(unit), "in", str(convert_unit), "is %f" % pounds)
+
+elif (unit == "mm") and (convert_unit == "feet"):
+    feet = (unit_value / 304.8)
+    print("The value of", str(unit), "in", str(convert_unit), "is %f" % feet)
+
+elif (unit == "cm") and (convert_unit == "feet"):
+    feet = (unit_value / 30.48)
+    print("The value of", str(unit), "in", str(convert_unit), "is %f" % feet)
+
+elif (unit == "m") and (convert_unit == "feet"):
+    feet = (unit_value * 3.2808399)
+    print("The value of", str(unit), "in", str(convert_unit), "is %f" % feet)
+
+elif (unit == "mm") and (convert_unit == "inches"):
+    inches = (unit_value / 25.4)
+    print("The value of", str(unit), "in", str(convert_unit), "is %f" % inches)
+
+elif (unit == "cm") and (convert_unit == "inches"):
+    inches = (unit_value / 2.54)
+    print("The value of", str(unit), "in", str(convert_unit), "is %f" % inches)
+
+elif (unit == "m") and (convert_unit == "inches"):
+    inches = (unit_value * 39.370087)
+    print("The value of", str(unit), "in", str(convert_unit), "is %f" % inches)
+
+elif (unit == "cm") and (convert_unit == "miles"):
+    miles = (unit_value / 160934.4)
+    print("The value of", str(unit), "in", str(convert_unit), "is %f" % miles)
+
+elif (unit == "m") and (convert_unit == "miles"):
+    miles = (unit_value / 1609.344)
+    print("The value of", str(unit), "in", str(convert_unit), "is %f" % miles)
+
+elif (unit == "km") and (convert_unit == "miles"):
+    miles = (unit_value / 1.609344)
+    print("The value of", str(unit), "in", str(convert_unit), "is %f" % miles)
+
+else:
+    print("the units chosen are wrong")
