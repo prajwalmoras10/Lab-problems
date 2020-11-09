@@ -1,0 +1,20 @@
+# displays number of odd and even numbers in a sequence of numbers
+my_list = []
+
+count = int(input("How many numbers you want to add : "))
+
+for i in range(1,count+1):
+    my_list.append(int(input("Enter number {} : ".format(i))))
+
+print("Input Numbers : ")
+print(my_list)
+
+num_even = 0
+num_odd = 0
+
+for num in my_list:
+    if num % 2 == 0 :
+        num_even = num_even + 1
+    else:
+        num_odd = num_odd + 1
+print("number of even numbers is %d and number of odd numbers is %d" % (num_even, num_odd))
