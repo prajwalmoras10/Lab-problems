@@ -1,0 +1,24 @@
+# takes a line of input as string and prints only uppercase letters
+def only_upper(s):
+    return "" . join(c for c in s if c.isupper())
+
+
+a = str(input("Enter string with both upper and lower case letters: "))
+print("The uppercase letters in this string are", only_upper(a))
+
+
+# takes a line of input as string and prints only lowercase letters
+def only_lower(s):
+    return "" . join(c for c in s if c.islower())
+
+
+print("The lower case letters in this string are", only_lower(a))
+
+# takes a line of input as string and print every second letter of the string
+st = str(input("Enter a string: "))
+d = (st.split())
+
+st = str(d)
+print("Second Letter of Each Word:")
+for word in st.split():
+    print(word[2])
