@@ -1,0 +1,12 @@
+# takes side length and prints a square and rhombus
+sideLength = int(input("enter side length: "))
+i = 0
+while i < sideLength:
+    print("*" * i)
+    i = i + 1
+
+i = sideLength
+while i <= 0:
+    i = i - 1
+    print("*" * i)
+    
