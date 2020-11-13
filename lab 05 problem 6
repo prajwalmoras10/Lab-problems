@@ -1,0 +1,19 @@
+# masculine and feminine picked from input from french words
+name = str(input("Enter the french name for any country: "))
+vowel = "a,e,i,o,u,A,E,I,O,U"
+masculine = "Belize, Mozambique, Mexique, Zaire, Zimbabwe, Cambodge, Canada"
+
+if (name[len(name) - 1] == "e") and (name in masculine):
+    print("le", name)
+
+elif name[0] in vowel and name[len(name) - 1] == "s":
+    print("les", name)
+
+elif name[len(name) - 1] == "s":
+    print("les", name)
+
+elif name[0] in vowel:
+    print("l'", name)
+
+else:
+    print("la", name)
