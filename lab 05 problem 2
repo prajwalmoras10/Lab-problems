@@ -1,0 +1,24 @@
+# atm pin with loop
+atm_pin = input("Enter the atm pin: ")
+tries = -2
+pin = "9611"
+
+while tries < 0:
+    if pin == atm_pin:
+        print("Your pin is correct.")
+        break
+    elif atm_pin != pin:
+        print("Your pin is incorrect. Try again")
+        atm_pin = input("Enter pin again: ")
+        if atm_pin == pin:
+            print("Your pin is correct")
+    elif atm_pin != pin:
+        print("Your pin is incorrect. Try again")
+        atm_pin = input("Enter pin again: ")
+        if atm_pin == pin:
+            print("Your pin is correct")
+    tries = tries + 1
+
+if tries == 0:
+    print("You have entered the wrong pin 3 times.")
+    print("Your debit card is blocked.")
