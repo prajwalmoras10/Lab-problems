@@ -1,0 +1,17 @@
+# predator and prey problem
+a = float(input("Enter a rate of prey birth that exceeds natural death: "))
+b = float(input("Enter rate of predation: "))
+c = float(input("Enter rate of predator death without food: "))
+d = float(input("Enter a rate of predator increase with food: "))
+
+prey = int(input("Enter initial prey population: "))
+predator = int(input("Enter initial predator population: "))
+
+num_periods = int(input("Enter simulation periods: "))
+
+for i in range(0, num_periods):
+    prey_next = prey * (1+a-b*predator)
+    predator_next = predator*(1-c+d*prey)
+    prey = prey_next
+    predator = predator_next
+    print(f"p{i}: prey: {prey} predator: {predator}")
