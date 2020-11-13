@@ -1,0 +1,52 @@
+# alphabetical order
+name_1 = input("Enter name 1 :")
+name_2 = input("Enter name 2 :")
+name_3 = input("Enter name 3 :")
+
+if (name_1 < name_2) and (name_2 < name_3):
+    print("The alphabetical order is:")
+    print(name_1)
+    print()
+    print(name_2)
+    print()
+    print(name_3)
+
+elif (name_1 < name_3) and (name_3 < name_2):
+    print("The alphabetical order is:")
+    print(name_1)
+    print()
+    print(name_3)
+    print()
+    print(name_2)
+
+elif (name_2 < name_1) and (name_1 < name_3):
+    print("The alphabetical order is:")
+    print(name_2)
+    print()
+    print(name_1)
+    print()
+    print(name_3)
+
+elif (name_2 < name_3) and (name_3 < name_1):
+    print("The alphabetical order is:")
+    print(name_2)
+    print()
+    print(name_3)
+    print()
+    print(name_1)
+
+elif (name_3 < name_1) and (name_1 < name_2):
+    print("The alphabetical order is:")
+    print(name_3)
+    print()
+    print(name_1)
+    print()
+    print(name_2)
+
+elif (name_3 < name_2) and (name_2 < name_1):
+    print("The alphabetical order is:")
+    print(name_3)
+    print()
+    print(name_2)
+    print()
+    print(name_1)
