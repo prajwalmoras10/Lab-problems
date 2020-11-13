@@ -1,0 +1,11 @@
+# random number generator
+
+a = 32310901
+b = 1729
+m = 2 ** 24
+
+r = int(input("Enter a number : "))
+
+for i in range(0, 101):
+    r = (a * r + b) % m
+    print(f"{i}th number : {r}")
