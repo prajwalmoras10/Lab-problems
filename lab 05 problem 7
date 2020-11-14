@@ -1,0 +1,14 @@
+# tickets at a theatre
+ticket_num = float(input("Enter the number of tickets you want : "))
+total_tickets = 100
+customers = 0
+
+while total_tickets >= 0:
+    if ticket_num <= 4:
+        total_tickets = total_tickets - ticket_num
+        customers = customers + 1
+    else:
+        print("You can only buy a maximum of 4 tickets")
+
+print("The number of tickets remaining = ", total_tickets)
+print("The total number of customers = ", customers)
