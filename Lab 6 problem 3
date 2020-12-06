@@ -1,0 +1,15 @@
+# checks if the string entered is contained in the aforementioned string
+def find(string, match):
+    print("The string is entered is " + string)
+    print("The keyword entered is " + match)
+    if match in string:
+        print("The word %s is in the string %s" % (match, string))
+        print("The situation is true")
+    else:
+        print("The entered word is not in the string, the situation is false")
+
+
+string = input("Enter a string: ")
+match = input("Enter a keyword: ")
+
+find(string, match)
