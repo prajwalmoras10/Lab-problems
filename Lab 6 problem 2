@@ -1,0 +1,10 @@
+# counts the number of words in a string
+def countWords(string):
+    print("The original string is " + string)
+    length = len(string.split())
+    print("The number of words in the sentence: ", length)
+
+
+string = input("Enter a sentence: ")
+
+countWords(string)
