@@ -1,0 +1,15 @@
+# function to calculate the balance of the account after interest and certain number of years
+def bank_balance(initial, years):
+    interest = 0.09
+    target = 50000
+    year_count = 0
+    while initial <= target and year_count <= years:
+        initial = initial * 0.09
+        year_count = year_count + 1
+        print(initial)
+
+
+initial = int(input("Enter initial amount present in bank account: "))
+years = int(input("Enter the number of years you will keep the account: "))
+
+bank_balance(initial, years)
