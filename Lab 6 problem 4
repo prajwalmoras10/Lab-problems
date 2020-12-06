@@ -1,0 +1,14 @@
+# gives financial aid information by taking input of number of children and annual income
+def financial_aid(income, children):
+    if (income > 30000) and (income < 40000) and (children >= 3):
+        print("The aid provided to each child is $1000")
+    elif (income > 20000) and (income < 30000) and (children >= 2):
+        print("The aid provided to each child is $1500")
+    elif income < 20000:
+        print("The aid provided to each child is $2000")
+
+
+income = int(input("Enter annual income of the applicant's family: "))
+children = int(input("Enter the number of children in the applicant's family: "))
+
+financial_aid(income, children)
