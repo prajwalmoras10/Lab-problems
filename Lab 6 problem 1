@@ -1,0 +1,13 @@
+# writes the number of vowels in a string
+
+def count_vowels(string):
+    vowels = set("aeiouAEIOU")
+    count = 0
+    for alphabet in string:
+        if alphabet in vowels:
+            count = count + 1
+            print("Number of vowels = ", count)
+
+string = input("Enter a string: ")
+
+count_vowels(string)
